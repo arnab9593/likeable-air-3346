@@ -89,8 +89,14 @@
     /* background-color: green; */
     font-size: 15px;
 }
+#pnextdiv a{
+    text-decoration: none;
+    color: black;
+}
 
-#pnextdiv>span:hover {
+
+
+#pnextdiv>a:hover {
     color: teal;
     cursor: pointer;
 }

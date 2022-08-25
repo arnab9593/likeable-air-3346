@@ -72,6 +72,6 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    line-height: 0ch;
+    /* line-height: 0ch; */
 
 }
