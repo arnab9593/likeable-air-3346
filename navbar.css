@@ -82,6 +82,13 @@
     color: teal;
     cursor: pointer;
 }
+#datadisplayp{
+    height: 450px;
+    width:80%;
+    border: 1px solid;
+    margin: auto;
+    display: none;
+}
 /* ---------------------navbar code ends here-------------------------- */
 /* ---------------------footer starts here----------------------------- */
 #pfooter{
