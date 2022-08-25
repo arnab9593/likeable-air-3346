@@ -1,0 +1,173 @@
+#M_back{
+   height: 100px;background-color: #F7F9F8;
+}
+#M_subcata{
+width: 80%;
+}
+#btn{
+     width: 10%;height: 100px;border: transparent;background-color: #F7F9F8;
+}
+#btn>:hover{
+    cursor: pointer;  transform: scale(1.2);
+}
+#btn>img{
+    width: 100%;height:auto;
+}
+.firsth1{
+
+width: 40%;margin: auto;margin-top: 10px;text-align: center;
+}
+#M_maindiv{
+   height:auto;width: 60%;margin: auto;display: flex;flex-direction: column;
+    
+}
+#M_maindiv>h1{
+   
+}
+#M_maindiv>h1{
+    width: 80%;margin: auto;margin-bottom: 40px;margin-top: 20px;
+}
+.subdiv{
+    display: flex; ;margin: 10px;width: 80%;justify-content: space-between;border: 0.5px solid #C4C3C2;margin-left: 30px;
+}
+.subdiv>img{
+    width: 7%;
+}
+.subdiv>h3{
+    margin-right: 60%;
+}
+.subdiv>button{
+    width: 7%;border: transparent;
+}
+.subdiv>button>:hover{
+    cursor: pointer;transform: scale(2.5);transition: 0.7s ease;
+}
+.subdiv>button>img{
+    width: 100%; 
+}
+
+
+
+
+/* postpage css */
+
+.titel{
+    border:0.5px solid #CFCDCD;width: 50%;margin: auto;
+    padding-left: 5%;
+}
+#subdiv{
+    margin: auto;width: auto;
+    padding-left: 10%;display: flex;flex-direction: column;
+}
+#select{
+    width: 30%;padding: 10px;
+}
+#year{
+    width: 30%;padding: 10px;margin-top: 30px;
+}
+
+#ftype{
+    width: 50%;margin: auto;
+    padding-right: 30%;
+}
+#ftype>button:hover{
+    cursor: pointer;transform: scale(1.5);transition: 0.7s ease;
+    background-color: rgb(187, 232, 229);border: transparent;
+}
+
+#trns{
+    width: 50%;margin: auto;
+    padding-right: 30%;
+}
+#trns>button:hover{
+    cursor: pointer;transform: scale(1.5);transition: 0.7s ease;
+    background-color: rgb(187, 232, 229);border: transparent;
+}
+#main{
+    width: 55%;margin: auto;border:0.5px solid #CFCDCD;
+}
+#km{
+ margin-left: 10%;
+ padding: 10px;
+ margin-top: 30px;
+ width: 30%;
+}
+#owner{
+    margin-left: 10%;
+    
+}
+#owner>button:hover{
+    cursor: pointer;
+    background-color: rgb(187, 232, 229);border: transparent;
+    transform: scale(1.5);transition: 0.7s ease;
+}
+.owner{
+    padding: 10px;
+}
+#titel{
+    margin-left: 10%;
+ 
+ padding: 10px;
+ width: 30%;
+}
+#main>p{
+    margin-left: 10%;
+}
+#des{
+    margin-left: 10%;padding: 40px;width: 24%;
+}
+#price{
+    margin-left: 10%;
+}
+#pr{
+    padding: 10px;width: 30%;
+}
+#pics{
+    margin-left: 10%;margin-top: 10px;
+}
+#img{
+    padding: 10px;width: 30%;
+}
+#state{
+    margin-left: 10%;padding: 20px;width: 30%;
+}
+
+#location>p{
+    margin-left: 10%;
+}
+#location{
+   margin-top: 20px;
+}
+#details{
+    display: flex;
+}
+#details>img{
+    width: 10%;padding-left: 10%;margin-top: 20px;
+}
+
+#name{
+    height: 30px;margin-top: 40px;margin-left: 8%;
+}
+#post{
+    margin-left: 10%;padding: 10px;
+}
+#post:hover{
+    cursor: pointer;
+    background-color: rgb(64, 178, 170);border: transparent;transform: scale(1.5);transition: 0.7s ease;
+}
+
+h4{
+    border:0.5px solid #CFCDCD;
+}
+#M_back+h1{
+    width: 40%;margin-top: 20px;margin-bottom: 20px;margin: auto;;
+}
+#M_maindiv>h2{
+  margin-left:5%;width: 80%;margin-top: 40px;
+}
+
+
+
+
+
+
