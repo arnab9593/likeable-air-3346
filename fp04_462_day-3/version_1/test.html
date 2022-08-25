@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slider {
+        display: flex;
+        width: 100%;
+        position: relative;
+
+        /* border: 3px solid black; */
+      }
+
+      .slider::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
+      .leftarrow {
+        position: absolute;
+        top: 180px;
+        left: 5px;
+        z-index: 1;
+      }
+
+      .rightarrow {
+        position: absolute;
+        top: 180px;
+        right: 5px;
+        z-index: 1;
+      }
+
+      .leftarrow:hover {
+        cursor: pointer;
+        background-color: red;
+        border-radius: 30%;
+        opacity: 0.7;
+      }
+
+      .rightarrow:hover {
+        cursor: pointer;
+        background-color: red;
+        border-radius: 30%;
+        opacity: 0.7;
+      }
+
+      #list_container_1 {
+        display: grid;
+        grid-template-columns: repeat(30, 25%);
+        justify-content: flex-start;
+        gap: 10px;
+        overflow-x: auto;
+      }
+
+      #list_container_1::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+      #list_container_1>div{
+        border: 1px solid red;
+        height: 100px;
+     
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="list_container_1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    
+    </div>
+    <button class="rightarrow">Right</button>
+    <button class="leftarrow">left</button>
+  </body>
+</html>
+<script>
+  document.querySelectorAll(".rightarrow").forEach((button, index) => {
+    button.addEventListener("click", function () {
+      let sliderbox1 = document.querySelector("#list_container_1");
+      myslider(sliderbox1, "right", 40, 300, 40);
+    });
+  });
+  document.querySelectorAll(".leftarrow").forEach((button, index) => {
+    button.addEventListener("click", function () {
+      let sliderbox1 = document.querySelector("#list_container_1");
+      myslider(sliderbox1, "left", 40, 300, 40);
+    });
+  });
+  let myslider = (sliderbox, direction, speed, distance, step) => {
+    console.log("hi");
+    let scrollAmount = 0;
+    let slidetime = setInterval(() => {
+      if (direction == "left") {
+        sliderbox.scrollLeft -= step;
+      } else {
+        sliderbox.scrollLeft += step;
+        console.log("w");
+      }
+      scrollAmount += step;
+      if (scrollAmount >= distance) {
+        window.clearInterval(slidetime);
+      }
+    }, speed);
+  };
+</script>
