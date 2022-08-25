@@ -1,0 +1,82 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mobile {
+
+    margin: auto;
+    width: 22%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 100px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+    
+
+#next
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    border: 2px solid;
+    border-radius: 4px;
+   
+    /* background-color:#002f34 ; */
+    /* opacity: .1; */
+    font-weight: bolder;
+    cursor: not-allowed;
+    /* color: white; */
+    padding: 20px;
+    }
+.phone
+{
+     background-color:#002f34 ; 
+      color: white;
+}
+#telephone
+{
+    display: flex;
+    width: 99%;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 4px;
+    text-align: center; 
+ 
+    
+}
+
+#telephone:focus{
+   outline-width: 6px;
+   outline-color: teal;
+}
+
+#olx
+{
+    width: 22%;
+}
+
+#main_div
+{
+  width: 95%;
+ 
+ display: flex;
+ flex-direction: column;
+ gap: 55px;  
+}
+p{
+    font-size: 13px;
+    text-align: center;
+    color: #475758;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
