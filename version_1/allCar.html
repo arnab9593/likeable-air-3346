@@ -5,14 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olx</title>
+    <title>Olx Rapo</title>
     <link rel="stylesheet" href="styles/car.css" />
     <link rel="stylesheet" href="styles/navbar.css">
-
 </head>
 
-<body id="h_body">
-
+<body>
     <div id="maindesai">
         <div id="igdiv">
             <img src="https://logos-world.net/wp-content/uploads/2022/04/OLX-Symbol.png" alt="" id="logoimage" />
@@ -47,52 +45,10 @@
             <a href="">For Rent: Houses & Apartments</a>
         </div>
     </div>
-
-    <div id="container_h">
-        <div class="l_first">
-            <button id="btn0" style="border: 2px solid transparent; z-index: 1">❮</button>
-            <button id="btn1" style="border: 2px solid transparent; z-index: 2">❯</button>
-        </div>
-        <div id="h_container1">
-            <div id="h_box1">
-                <div class="l_second">
-                </div>
-                <div class="h_overView">
-                    <h2>Overview</h2>
-                    <hr />
-                    <div id="main_h">
-                        <div class="div1_ho">Owner</div>
-                        <div class="div2_ho">Location</div>
-                        <div class="div3_ho">Posting Date</div>
-                    </div>
-                </div>
-                <div class="h_discription">
-                    <h2>Description</h2>
-                    <hr />
-                </div>
-
-                <div class="l_third">
-                    <h1>Related ads</h1>
-                </div>
-            </div>
-            <div id="h_box2">
-                <div id="h_dorkar">
-                    <div class="r_first"></div>
-                    <div class="r_second">
-                        <h1>Seller description</h1>
-                        <hr>
-                    </div>
-                    <div class="r_third">
-                        <h1>Posted in</h1>
-                        <!-- arnab's code for map functionality -->
-                        <iframe width="400" height="240" id="gmap_canvas" frameborder="0" scrolling="no"
-                            marginheight="0" marginwidth="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="Parent_h">
+        <div id="h_container_first"></div>
+        <div id="h_container"></div>
     </div>
-    <!-- ----------------------------------footer starts here--------------------------- -->
     <div id="pfooter">
         <div>
             <h5>POPULAR LOCATIONS</h5>
@@ -153,8 +109,54 @@
         <p>Pakistan - South Africa - Indonesia</p>
         <h4>Free Classifieds in India. © 2006-2022 OLX</h4>
     </div>
-    <!-- footer ends here -->
 </body>
 
 </html>
-<script src="scripts/car.js"></script>
+<script>
+    //https://sleepy-thicket-35635.herokuapp.com/api/car
+
+    let getData = async () => {
+        let url = "https://sleepy-thicket-35635.herokuapp.com/api/car";
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data);
+        displayData(data);
+    };
+    getData();
+
+    let displayData = (data) => {
+        let box = document.getElementById("h_container");
+        box.innerHTML = "";
+        data.forEach((el) => {
+            const div = document.createElement("div");
+            div.setAttribute("class", "div_h");
+
+            const image = document.createElement("img");
+            image.src = el.image;
+            image.setAttribute("class", "h_img");
+
+            const price = document.createElement("h2");
+            price.innerText = `₹ ${el.price}`;
+
+            const km = document.createElement("h4");
+            //   km.innerText = el.km;
+            km.innerText = `KM - ${el.km}`;
+
+            const brand = document.createElement("h3");
+            brand.innerText = el.model;
+
+            const location = document.createElement("p");
+            location.innerText = el.location;
+
+            div.append(image, price, km, brand, location);
+            div.addEventListener("click", () => {
+                goToNextPage(el);
+            });
+            box.append(div);
+        });
+    };
+    let goToNextPage = (el) => {
+        localStorage.setItem("carHirak", JSON.stringify(el));
+        window.location.href = "car.html";
+    };
+</script>
