@@ -6,73 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Olx</title>
     <link rel="stylesheet" href="index.css" />
-    <!-- <style>
-      .h_overView {
-        /* border: 1px solid green; */
-        width: 92%;
-        /* height: 150px; */
-        margin-top: 2%;
-        background-color: white;
-        padding: 30px;
-      }
-      .h_discription {
-        /* border: 1px solid green; */
-        width: 92%;
-        /* height: 250px; */
-        margin-top: 2%;
-        background-color: white;
-        padding: 30px;
-      }
-      .l_second {
-        padding: 30px;
-      }
-
-      .h_fuel {
-        text-transform: uppercase;
-        font-size: 17px;
-      }
-      .h_discription h2 {
-        margin-bottom: 5%;
-      }
-      .h_discription hr {
-        margin-bottom: 5%;
-      }
-
-      #main_h {
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-around;
-      }
-      .h_overView > h2 {
-        margin-bottom: 5%;
-      }
-
-    </style>
-    <style>
-      .l_first {
-        /* border:1px solid red; */
-        width: 100%;
-        position: relative;
-        cursor: pointer;
-      }
-      /* img {
-        width: 100%;
-      } */
-      .l_first > button {
-        position: absolute;
-        top: 44%;
-        font-size: 200%;
-        background-color: transparent;
-        color: black;
-        gap: 40px;
-      }
-      .l_first > button:nth-child(2) {
-        right: 5%;
-      }
-      .l_first > button:nth-child(1) {
-        left: 5%;
-      }
-    </style> -->
   </head>
   <body id="h_body">
     <div id="container_h">
@@ -252,15 +185,15 @@
   // let img = document.querySelector("#imgslider");
 
   //
-  let img = document.querySelector(".h_img");
+  let img = document.querySelector(".h_img_1");
   let btn0 = document.querySelector("#btn0");
   let btn1 = document.querySelector("#btn1");
 
   let imgCount = 0;
   let imgArr = [
-    JSON.parse(localStorage.getItem("carHirak")).image1,
-    JSON.parse(localStorage.getItem("carHirak")).image2,
-    JSON.parse(localStorage.getItem("carHirak")).image3,
+    JSON.parse(localStorage.getItem("carHirak")).img2,
+    JSON.parse(localStorage.getItem("carHirak")).img3,
+    JSON.parse(localStorage.getItem("carHirak")).img4,
     JSON.parse(localStorage.getItem("carHirak")).image,
   ];
   btn0.addEventListener("click", function () {
