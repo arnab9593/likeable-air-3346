@@ -15,12 +15,12 @@
         <div id="igdiv">
             <img src="https://logos-world.net/wp-content/uploads/2022/04/OLX-Symbol.png" alt="" id="logoimage" />
         </div>
-        <select name="" id="location">
-            <option value="">India</option>
-            <option value="">Delhi</option>
-            <option value="">Karnataka</option>
-            <option value="">West Bengal</option>
-            <option value="">Maharashtra</option>
+        <select name="" id="location" onchange="filter()">
+            <option value="India">India</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Maharashtra">Maharashtra</option>
         </select>
         <div id="searchp">
             <input type="text" placeholder="Find Cars, Mobile Phones and more..." id="psearch" />
@@ -52,10 +52,10 @@
                 <h2>Select City</h2>
                 <select name="" id="city_h">
                     <option value="India">India</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Karnataka">Karnataka</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="karnataka">Karnataka</option>
                     <option value="West Bengal">West Bengal</option>
-                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="maharashtra">Maharashtra</option>
                 </select>
             </div>
 
@@ -210,4 +210,22 @@
         localStorage.setItem("carHirak", JSON.stringify(el));
         window.location.href = "car.html";
     };
+
+
+    let filter = async () => {
+        let value = document.getElementById("location").value;
+        console.log(value);
+        if (value == "India") {
+            let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/car`)
+            let data = res = await res.json();
+            // console.log(data);
+            displayData(data)
+        }
+        else {
+            let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/car?location=${value}`)
+            let data = res = await res.json();
+            // console.log(data);
+            displayData(data)
+        }
+    }
 </script>

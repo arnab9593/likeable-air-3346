@@ -43,3 +43,20 @@ let goToNextPage = (el) => {
     localStorage.setItem("bike_arnab", JSON.stringify(el));
     window.location.href = "bike.html";
 };
+
+let filter = async () => {
+    let value = document.getElementById("location").value;
+    if (value == "India") {
+        let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/bikes`)
+        let data = res = await res.json();
+        // console.log(data);
+        displayData(data)
+    }
+    else {
+        let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/bikes?location=${value}`)
+        let data = res = await res.json();
+        // console.log(data);
+        displayData(data)
+    }
+
+}

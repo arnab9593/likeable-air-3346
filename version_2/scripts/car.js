@@ -236,3 +236,4 @@ let myslider = (sliderbox, direction, speed, distance, step) => {
         }
     }, speed);
 };
+

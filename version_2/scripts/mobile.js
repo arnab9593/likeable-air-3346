@@ -40,3 +40,19 @@ let goToNextPage = (el) => {
     localStorage.setItem("mobile_arnab", JSON.stringify(el));
     window.location.href = "mobile.html";
 };
+let filter = async () => {
+    let value = document.getElementById("location").value;
+    if (value == "India") {
+        let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/mobile`)
+        let data = res = await res.json();
+        // console.log(data);
+        displayData(data)
+    }
+    else {
+        let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/mobile?location=${value}`)
+        let data = res = await res.json();
+        // console.log(data);
+        displayData(data)
+    }
+
+}

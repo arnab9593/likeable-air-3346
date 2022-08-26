@@ -15,7 +15,7 @@ let displayDOM = (data) => {
         photo.setAttribute("class", "a_mainPhoto")
 
         let amt = document.createElement("h4");
-        amt.innerText = ele.price;
+        amt.innerText = `₹ ${ele.price}`;
         amt.setAttribute("class", "a_amt")
 
         let model = document.createElement("p");
@@ -54,13 +54,13 @@ let filter = async () => {
     if (value == "India") {
         let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/random`)
         let data = res = await res.json();
-        console.log(data);
+        // console.log(data);
         displayDOM(data)
     }
     else {
         let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/random?location=${value}`)
         let data = res = await res.json();
-        console.log(data);
+        // console.log(data);
         displayDOM(data)
     }
 

@@ -27,8 +27,8 @@ let displayDomData = (el) => {
     model.innerText = el.model;
     // console.log(model);
 
-    const description = document.createElement("p");
-    description.innerText = el.description;
+    const description = document.createElement("h1");
+    description.innerText = el.mobilename;
     console.log(description);
 
     // const fuel = document.createElement("p");
@@ -36,7 +36,7 @@ let displayDomData = (el) => {
     // fuel.setAttribute("class", "h_fuel");
 
     const km = document.createElement("p");
-    km.innerText = el.km;
+    km.innerText = `Ram - ${el.ram}`;
     km.setAttribute("class", "h_km");
 
     const carname = document.createElement("p");
@@ -44,11 +44,11 @@ let displayDomData = (el) => {
     carname.setAttribute("class", "overview_h");
 
     const fuelTank = document.createElement("p");
-    fuelTank.innerText = `Fuel - ${el.fuel}`;
+    fuelTank.innerText = `Display - ${el.display}`;
     fuelTank.setAttribute("class", "overview_h");
 
     const Overview_Km = document.createElement("p");
-    Overview_Km.innerText = `Km - ${el.km_driven}`;
+    Overview_Km.innerText = `Os - ${el.os}`;
     Overview_Km.setAttribute("class", "overview_h");
 
     const location_h = document.createElement("p");
@@ -56,17 +56,17 @@ let displayDomData = (el) => {
     location_h.innerText = `Location - ${el.location}`;
     location_h.setAttribute("class", "overview_h");
 
-    // const accident = document.createElement("p");
-    // accident.innerText = `Accident - ${el.accident}`;
-    // accident.setAttribute("class", "overview_h");
+    const accident = document.createElement("p");
+    accident.innerText = `Chipset - ${el.chipset}`;
+    accident.setAttribute("class", "overview_h");
 
     const manufacured_year = document.createElement("p");
-    manufacured_year.innerText = `Manufacured Year - ${el.manufacured_year}`;
+    manufacured_year.innerText = `Manufacured Year - ${el.member_since}`;
     manufacured_year.setAttribute("class", "overview_h");
 
-    const brand = document.createElement("p");
-    brand.innerText = `Brand - ${el.brand}`;
-    brand.setAttribute("class", "overview_h");
+    // const brand = document.createElement("p");
+    // brand.innerText = `Brand - ${el.brand}`;
+    // brand.setAttribute("class", "overview_h");
 
     // const month = document.createElement("p");
     // month.innerText = `Making Month - ${el.makeMonth}`;
@@ -80,9 +80,9 @@ let displayDomData = (el) => {
     // finance.innerText = `Finance - ${el.finance}`;
     // finance.setAttribute("class", "overview_h");
 
-    // const tyre = document.createElement("p");
-    // tyre.innerText = `Tyre - ${el.tyre}`;
-    // tyre.setAttribute("class", "overview_h");
+    const tyre = document.createElement("p");
+    tyre.innerText = `Company Name - ${el.companyname}`;
+    tyre.setAttribute("class", "overview_h");
 
     const owner = document.createElement("h4");
     owner.innerText = el.seller_name;
@@ -92,9 +92,9 @@ let displayDomData = (el) => {
     loc.innerText = el.location;
     loc.setAttribute("class", "owner_h");
 
-    const pos = document.createElement("h4");
-    pos.innerText = el.seller_on_olx;
-    pos.setAttribute("class", "owner_h");
+    // const pos = document.createElement("h4");
+    // pos.innerText = el.seller_on_olx;
+    // pos.setAttribute("class", "owner_h");
 
     const seller_name = document.createElement("h4");
     seller_name.innerText = `Name - ${el.seller_name}`;
@@ -123,17 +123,17 @@ let displayDomData = (el) => {
         // fuelTank,
         Overview_Km,
         location_h,
-        // accident,
+        accident,
         manufacured_year,
-        brand,
+        // brand,
         // month,
         reg,
         // finance,
-        // tyre
+        tyre
     );
     box4.append(owner);
     box5.append(loc);
-    box6.append(pos);
+    // box6.append(pos);
     box7.append(seller_name, seller_no)
 };
 displayDomData(data_FormLs);
@@ -176,3 +176,4 @@ btn1.addEventListener("click", function () {
 let mapurl = `https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`
 let iframe = document.getElementById("gmap_canvas")
 iframe.src = mapurl;
+

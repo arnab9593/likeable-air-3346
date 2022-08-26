@@ -176,3 +176,20 @@ btn1.addEventListener("click", function () {
 let mapurl = `https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`
 let iframe = document.getElementById("gmap_canvas")
 iframe.src = mapurl;
+
+let filter = async () => {
+    let value = document.getElementById("location").value;
+    if (value == "India") {
+        let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/random`)
+        let data = res = await res.json();
+        // console.log(data);
+        displayDOM(data)
+    }
+    else {
+        let res = await fetch(`https://sleepy-thicket-35635.herokuapp.com/api/random?location=${value}`)
+        let data = res = await res.json();
+        // console.log(data);
+        displayDOM(data)
+    }
+
+}
