@@ -1,0 +1,111 @@
+#h_container_first {
+  /* border: 1px solid red; */
+  width: 20%;
+}
+/* for city */
+#citydiv_h {
+    height: 100px;
+  /* border: 1px solid red; */
+  text-align: center;
+  /* font-family: serif; */
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+ #citydiv_h:hover {
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+#citydiv_h > p {
+  margin: auto;
+  width: 80%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  /* border: 1px solid red; */
+  height: 30px;
+}
+#city_h {
+  margin: auto;
+  /* font-family: cursive; */
+  width: 80%;
+  height: 25px;
+  text-align: center;
+  font-size: 15px;
+
+  /* border-radius: 10%; */
+}
+
+/* for brand */
+#filtering_h {
+    height: 100px;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* font-family: serif; */
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+  }
+   #filtering_h:hover {
+   height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  
+  #filtering_h > p {
+   margin: auto;
+  width: 80%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  /* border: 1px solid red; */
+  height: 30px;
+  }
+  
+  #brnd_h {
+    margin: auto;
+  /* font-family: cursive; */
+  width: 80%;
+  height: 25px;
+  text-align: center;
+  font-size: 15px;
+  }
+  /* For Rs */
+  
+  #pricediv_h {
+    height: 300px;
+    border: 1px solid red;
+    text-align: center;
+    /* font-family: serif; */
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pricediv_h button{
+    width: 225px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+
+  #pricediv_h:hover {
+    height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  #pricediv_h > p {
+    margin: auto;
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    /* border: 1px solid red; */
+    height: 30px;
+  }
+  #price_h {
+    margin: auto;
+    /* font-family: cursive; */
+    width: 80%;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+  } 
