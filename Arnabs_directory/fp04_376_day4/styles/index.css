@@ -57,11 +57,11 @@
 
 #a_footer_img {
     display: flex;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 100%;
     height: 200px;
     margin-top: 20px;
-    margin-bottom: -20px;
+    margin-bottom: -200px;
     justify-content: space-around;
     color: #002F34;
 }
