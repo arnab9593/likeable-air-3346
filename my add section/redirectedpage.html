@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olx</title>
+    
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+
+<body id="h_body">
+
+    <div id="maindesai">
+        <div id="igdiv">
+            <img src="https://logos-world.net/wp-content/uploads/2022/04/OLX-Symbol.png" alt="" id="logoimage" />
+        </div>
+        <select name="" id="location">
+            <option value="">India</option>
+            <option value="">Delhi</option>
+            <option value="">Karnataka</option>
+            <option value="">West Bengal</option>
+            <option value="">Maharashtra</option>
+        </select>
+        <div id="searchp">
+            <input type="text" placeholder="Find Cars, Mobile Phones and more..." id="psearch" />
+            <!-- <div></div> -->
+        </div>
+        <select name="" id="planguage">
+            <option value="">English</option>
+            <option value="">Hindi</option>
+        </select>
+        <a id="loginanc" href="login.html">Login</a>
+        <button id="psell">+ SELL</button>
+
+
+
+    
+    </div>
+<div id="mainbox">
+    
+        
+    
+</div>
+        
+    </body>
+    <script>
+
+   
+
+   window.onload=()=>{
+    getdata()
+   }
+
+    async function getdata(){
+        let link=`http://localhost:3000/api/useripdata`
+        let res=await fetch(link)
+        let data=await res.json()
+        apendfn(data)
+    }
+    
+ 
+    apendfn=(data)=>{
+        
+        let box=document.getElementById("mainbox")
+        box.innerHTML=null;
+        data.forEach((elm)=>{
+            
+            let midbox=document.createElement("div")
+               midbox.setAttribute("id","midbox")            
+            let name=document.createElement("div")
+            name.setAttribute("class","name")
+            let n1=document.createElement("p")
+            n1.innerText=elm.name
+            name.append(n1)
+
+            let year=document.createElement("div")
+            year.setAttribute("class","year")
+            let y1=document.createElement("h1")
+            y1.innerText=`Manufactured Year ${elm.manufactured_year}`
+            year.append(y1)
+            
+
+            let img=document.createElement("div")
+            img.setAttribute("class","img")
+            let i1=document.createElement("img")
+            i1.src=elm.img_url
+            img.append(i1)
+
+            let km=document.createElement("div")
+            km.setAttribute("class","km")
+            let k1=document.createElement("h3")
+            k1.innerText=`KM Driven ${elm.km_driven}`
+            km.append(k1)
+
+
+            let id=elm.id
+
+            let btn1=document.createElement("div")
+            btn1.setAttribute("class","btn1")
+            let b1=document.createElement("button")
+            b1.innerText="See Details"
+            btn1.onclick=()=>{
+             localStorage.setItem("data_status",true)
+                
+                
+                localStorage.setItem("data",JSON.stringify(elm))
+                window.location.href="./myadd.html"
+            }
+            btn1.append(b1)
+
+            let btn2=document.createElement("div")
+            btn2.setAttribute("class","btn2")
+            let b2=document.createElement("button")
+            b2.innerText="REMOVE"
+            btn2.append(b2)
+            btn2.onclick=()=>{
+                del(id)
+            }
+
+            midbox.append(img,name,year,km,btn1,btn2)
+            box.append(midbox)
+           
+
+        })
+        
+        
+    }
+
+
+
+    let del=async(id)=>{
+        console.log(id);
+        let dlink=`http://localhost:3000/api/useripdata/${id}`
+
+        let res=await fetch(dlink,{
+            method:"DELETE",
+            headers:{
+                "content-type":"application/json"
+            }
+        })
+        res=await res.json()
+        getdata(res)
+        
+    }
+    </script>
+   
+
