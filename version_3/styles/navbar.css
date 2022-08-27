@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* -------------------navbar outer div--------------------------- */
+#pnextdiv>a {
+    text-decoration: none;
+    color: black;
+}
+
+#maindesai {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    height: 70px;
+    /* border: 1px solid; */
+    background-color: #eff1f3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: auto;
+}
+
+#pnextdiv {
+    margin-top: 75px;
+    border: 3px solid #eff1f3;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* position: relative; */
+    font-size: 15px;
+}
+
+#logoimage {
+    width: 100%;
+    height: 100%;
+    margin-right: -100px;
+}
+
+#igdiv {
+    width: 45px;
+    height: 25px;
+    /* border: 1px solid; */
+}
+
+#loginanc {
+    font-size: 17px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+
+#location,
+#planguage {
+    height: 40px;
+    width: 13%;
+    margin-left: -40px;
+    box-sizing: border-box;
+    border: 2px solid #002f34;
+    border-radius: 3px;
+    font-size: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: grey;
+}
+
+#searchp {
+    height: 40px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+#psearch {
+    height: 33px;
+    width: 100%;
+    border: 2px solid #002f34;
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 2px 2px 2px 15px;
+    color: grey;
+}
+
+#psell {
+    height: 40px;
+    width: 7%;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#pnextdiv>span:hover {
+    color: teal;
+    cursor: pointer;
+}
+
+#containerp {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: auto;
+    width: 33%;
+    position: fixed;
+    margin-left: 27.5%;
+    margin-top: -14px;
+    gap: 25px;
+    z-index: 10;
+    background-color: white;
+    padding-left: 25px;
+}
+
+#alldata {
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#alldata>div {
+    display: flex;
+    flex-direction: column;
+    line-height: 29px;
+    padding-left: 35px;
+}
+
+#alldata>div>a {
+    /* background-color: green; */
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: gray;
+}
+
+#alldataparent {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: auto;
+    width: 83%;
+    margin: auto;
+    background-color: white;
+    display: none;
+}
+
+#downarrowp {
+    height: 18px;
+    width: 18px;
+    margin-left: -10px;
+}
+
+/* ---------------------navbar code ends here-------------------------- */
+/* ---------------------footer starts here----------------------------- */
+#pfooter a {
+    text-decoration: none;
+    color: black;
+}
+
+#pfooter {
+    /* margin-top: 500px; */
+    width: 100%;
+    height: 180px;
+    /* border: 3px solid; */
+    background-color: #eff1f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    /* position: absolute; */
+}
+
+#pfooter>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+#pfooter>div>a {
+    font-size: 13px;
+    color: gray;
+}
+
+#pfooter1 {
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    background-color: #002f34;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#fbicon,
+#instaicon,
+#twittericon,
+#yticon {
+    width: 17px;
+    height: 17px;
+    display: inline;
+}
+
+#pfooter>#picons>#alliconsp {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#pfooter>#picons>#playandapple {
+    margin-top: 35px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#pfooter>#picons>h5 {
+    display: block;
+    margin-bottom: 0px;
+}
+
+#pfooter>#picons {
+    text-align: left;
+    /* border: 1px solid; */
+    width: 10%;
+}
+
+/* ------------------------------footer ends here------------------------ */
