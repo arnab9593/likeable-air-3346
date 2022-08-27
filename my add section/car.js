@@ -134,11 +134,12 @@
 let body=document.getElementById("h_body")
  let y=JSON.parse(localStorage.getItem("data"))
 
+let x=JSON.parse(localStorage.getItem("data_status"))
 
 
 
-let x=localStorage.getItem("data_Status")
-if(x){
+
+if(x==null||false){
     console.log("heelo");
     body.innerHTML=null
     let maindiv=document.createElement("div")
@@ -154,7 +155,7 @@ if(x){
     maindiv.append(img,btn)
     body.append(maindiv)
 }
-else{
+else if(x==true) {
     let box = document.querySelector(".l_first");
     let box1 = document.querySelector(".r_first");
     let box2 = document.querySelector(".l_second");
@@ -170,7 +171,7 @@ else{
     box.append(image)
 
     const price = document.createElement("h1");
-        price.innerText = `₹ ${y.price}`;
+        price.innerText = `₹   ${y.price}`;
         price.setAttribute("class", "h_price");
         box1.append(price)
 
@@ -181,12 +182,12 @@ else{
 
 
             const pos = document.createElement("h4");
-                pos.innerText = y.date;
+                pos.innerText = y.manufactured_year;
                 pos.setAttribute("class", "owner_h");
                 box6.append(pos)
 
                 const owner = document.createElement("h4");
-    owner.innerText = y.owner;
+    owner.innerText = y.name;
     owner.setAttribute("class", "owner_h");
     box4.append(owner)
     
@@ -204,8 +205,18 @@ else{
  km.setAttribute("class","overview_h")
         
     box3.append(loc,fuelTank,des,km)
-  
 
- 
+    let brand=document.createElement("p")
+    brand.innerText=` Company name:-- ${y.brand}`
+    brand.setAttribute("class", "h_seller_name");
+    box7.append(brand)
+    box5.append(loc)
+
+    let titel=document.createElement("h1")
+    titel.innerText=`Note from seller:--  ${y.title}`
+
+    box2.append(titel)
+
+
 }
 

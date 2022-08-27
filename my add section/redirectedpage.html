@@ -49,18 +49,25 @@
     <script>
 
    
+// let countls=JSON.parse(localStorage.getItem("count"))
+
 
    window.onload=()=>{
     getdata()
+    
    }
-
+   
+let data;
     async function getdata(){
         let link=`http://localhost:3000/api/useripdata`
         let res=await fetch(link)
-        let data=await res.json()
+         data=await res.json()
+         console.log(data);
         apendfn(data)
     }
     
+    
+ 
  
     apendfn=(data)=>{
         
@@ -103,7 +110,7 @@
             let b1=document.createElement("button")
             b1.innerText="See Details"
             btn1.onclick=()=>{
-             localStorage.setItem("data_status",true)
+             localStorage.setItem("data_status","true")
                 
                 
                 localStorage.setItem("data",JSON.stringify(elm))
@@ -116,18 +123,29 @@
             let b2=document.createElement("button")
             b2.innerText="REMOVE"
             btn2.append(b2)
+            
             btn2.onclick=()=>{
-                del(id)
-            }
+                
+               localStorage.removeItem("data_status")
 
+                del(id)
+                splice()
+               
+            }
+          
             midbox.append(img,name,year,km,btn1,btn2)
+         
             box.append(midbox)
+          
            
 
         })
-        
-        
+       
+       
     }
+
+  
+    
 
 
 
@@ -145,6 +163,28 @@
         getdata(res)
         
     }
+   
+
+    let x=JSON.parse(localStorage.getItem("count"))
+    if(x.length<=0){
+            window.location.href="./myadd.html"
+        }
+    
+    let splice=()=>{
+        x.splice(0,1)
+        
+        if(x.length<=0){
+            localStorage.setItem("count",JSON.stringify(x))
+            window.location.href="./myadd.html"
+        }
+        console.log(x);
+
+    }
+    
+   
+    
+  
+    
     </script>
    
 

@@ -97,7 +97,7 @@ let delip=(id)=>{
     let km_driven=ip("km").value
 
     let postdata={brand,manufactured_year,state,price,fuel_type,trans,no_of_owner,title,img_url,description,name,year,km_driven}
-    console.log(postdata);
+    
 
     const link=`http://localhost:3000/api/useripdata`
 
@@ -122,4 +122,15 @@ let delip=(id)=>{
 
     
 
+}
+let countarr=JSON.parse(localStorage.getItem("count"))||[]
+let count=0
+document.getElementById("post").addEventListener("click",cata)
+function cata(){
+count++
+countarr.push(count)
+localStorage.setItem("count",JSON.stringify(countarr))
+
+   
+    window.location.href="../my add section/redirectedpage.html"
 }
