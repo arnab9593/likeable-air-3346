@@ -4,7 +4,7 @@ likeable-air-3346 </h1>
 
 <h3>
   
-  likeable-air-3346 is clone website of Olx.com. Olx.com is a platform where user can post there sellable item in the form of advertisement on the other hand they can buy any product as well from other's advertisement. Click<a href="https://charming-concha-ababfd.netlify.app/">here </a>to see the cloned website. </h3>
+  likeable-air-3346 is clone website of Olx.com. Olx.com is a platform where user can post there sellable item in the form of advertisement on the other hand they can buy any product as well from other's advertisement. Click <a href="https://charming-concha-ababfd.netlify.app/">here </a>to see the cloned website. </h3>
 
 <h3> We built it in 7days with the team of 5 collaborators.</h3>
 
@@ -44,24 +44,11 @@ likeable-air-3346 </h1>
   <li>LinkedIn: https://www.linkedin.com/in/padmanabhdesai/</li>
 </ul>
 
-<h4>Kriti</h4>
+<h4>Manmohan Singh Jina </h4>
 <ul>
-  <li>Github:kriti4666</li>
-  <li>Github Link: kriti4666</li>
-  <li>Email:kritikumari4666@gmail.com</li>
-  <li>LinkedIn:https://www.linkedin.com/in/kriti-kumari-b17188224/</li>
+  <li>Github: manmohanjina </li>
+  <li>Github Link: https://github.com/manmohanjina</li>
+  <li>Email: manish63singh@gmail.com</li>
+  <li>LinkedIn: https://www.linkedin.com/in/manmohan-jina-6a43a6260/</li>
 </ul>
 
-<h4>Gunjan kuthe</h4>
-<ul>
-  <li>Github:gunjankuthe111</li>
-  <li>Github Link:https://github.com/gunjankuthe111</li>
-  <li>Email:gkuthe1997@gmail.com</li>
-  <li>LinkedIn:https://www.linkedin.com/in/gunjankuthe/</li>
-</ul>
-
-<h4>Subham Kumar Ram</h4>
-<ul>
-  <li>Github: shubham020719 </li>
-  <li>Github Link: https://github.com/shubham020719 </li>
-</ul>
