@@ -51,3 +51,18 @@ likeable-air-3346 </h1>
   <li>LinkedIn: https://www.linkedin.com/in/manmohan-jina-6a43a6260/</li>
 </ul>
 
+ <h4>Hirak Debadhikary </h4>
+<ul>
+  <li>Github: Hirak-Debadhikary </li>
+  <li>Github Link: https://github.com/Hirak-Debadhikary</li>
+  <li>Email: debadhikaryhirak@gmail.com</li>
+  <li>LinkedIn: https://www.linkedin.com/in/hirak-debadhikary-374b9522b/</li>
+</ul>
+  
+ <h4>Shubham Anand</h4>
+<ul>
+  <li>Github: Shubhand17 </li>
+  <li>Github Link: https://github.com/Shubhand17</li>
+  <li>Email: iesshubham2020@gmail.com</li>
+  <li>LinkedIn: https://www.linkedin.com/in/shubhanand007/</li>
+</ul>
