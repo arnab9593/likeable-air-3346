@@ -11,19 +11,18 @@ likeable-air-3346 </h1>
 <h3> Some features of our Projects-</h3>
 <ol>
   <li>Login/sign-up functionality.</li>
-  <li>A Navbar section that contain buttons for login/signup,hamburger menu.</li>
-  <li>Navbar contains 6 section Products, Pricing, Solution, Customers, Resources, Partners.</li>
-  <li>Fully responsive website.</li>
-  <li>User friendly easy and secure subscription plan payment System.</li>
+  <li>A Navbar section that contain buttons for login/signup.</li>
+  <li>Navbar contains different catagories of</li>
+  <li>User friendly easy and home page.</li>
+  <li>Add posted on which location features using map api.</li>
 </ol>
 
 <p>Tech stack used :</p>
 <ul>
-  <li>ReactJS</li>
-  <li>External CSS libraries - Material UI , Chakra UI, Styled Components</li>
-  <li>Express</li>
-  <li>NodeJS</li>
-  <li>MongoDB</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>JSON Server</li>
 </ul>
 
 <h2>Team Members and Contributors</h2>
