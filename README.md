@@ -13,7 +13,7 @@ likeable-air-3346 </h1>
   <li>Login/sign-up functionality.</li>
   <li>A Navbar section that contain buttons for login/signup.</li>
   <li>Navbar contains different catagories of</li>
-  <li>User friendly easy and home page.</li>
+  <li>User friendly and easy home page.</li>
   <li>Add posted on which location features using map api.</li>
 </ol>
 
