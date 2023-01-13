@@ -4,7 +4,7 @@ likeable-air-3346 </h1>
 
 <h3>
   
-  likeable-air-3346 is clone website of Olx.com. Olx.com is a platform where user can post there sellable item in the form of advertisement on the other hand they can buy any product as well from other's advertisement</h3>
+  likeable-air-3346 is clone website of Olx.com. Olx.com is a platform where user can post there sellable item in the form of advertisement on the other hand they can buy any product as well from other's advertisement. Click<a href="https://charming-concha-ababfd.netlify.app/">here </a>to see the cloned website. </h3>
 
 <h3> We built it in 7days with the team of 5 collaborators.</h3>
 
@@ -36,12 +36,12 @@ likeable-air-3346 </h1>
   <li>LinkedIn:https://www.linkedin.com/in/arnab-pal-71248b155/</li>
 </ul>
 
-<h4>Nimish M.S</h4>
+<h4>Padmanabh Desai</h4>
 <ul>
-  <li>Github: msnimish</li>
-  <li>Github Link: https://github.com/msnimish</li>
-  <li>Email: msnimish24@gmail.com</li>
-  <li>LinkedIn:https://www.linkedin.com/in/msnimish/</li>
+  <li>Github: Padmanabh2</li>
+  <li>Github Link: https://github.com/Padmanabh2</li>
+  <li>Email: desaipadmanabh191@gmail.com</li>
+  <li>LinkedIn: https://www.linkedin.com/in/padmanabhdesai/</li>
 </ul>
 
 <h4>Kriti</h4>
